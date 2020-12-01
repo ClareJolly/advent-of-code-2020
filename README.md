@@ -18,29 +18,29 @@ Collect stars by solving puzzles. Two puzzles will be made available on each day
 
 ## Progress
 
-| Day                                              | Part 1 | Part 2 |
-| :----------------------------------------------- | :----: | :----: |
-| [Day 1: Report Repair](src/01/summary.md#readme) | :star: |        |
-| Day 2 - TBA                                      |        |        |
-| Day 3 - TBA                                      |        |        |
-| Day 4 - TBA                                      |        |        |
-| Day 5 - TBA                                      |        |        |
-| Day 6 - TBA                                      |        |        |
-| Day 7 - TBA                                      |        |        |
-| Day 8 - TBA                                      |        |        |
-| Day 9 - TBA                                      |        |        |
-| Day 10 - TBA                                     |        |        |
-| Day 11 - TBA                                     |        |        |
-| Day 12 - TBA                                     |        |        |
-| Day 13 - TBA                                     |        |        |
-| Day 14 - TBA                                     |        |        |
-| Day 15 - TBA                                     |        |        |
-| Day 16 - TBA                                     |        |        |
-| Day 17 - TBA                                     |        |        |
-| Day 18 - TBA                                     |        |        |
-| Day 19 - TBA                                     |        |        |
-| Day 20 - TBA                                     |        |        |
-| Day 21 - TBA                                     |        |        |
-| Day 22 - TBA                                     |        |        |
-| Day 23 - TBA                                     |        |        |
-| Day 24 - TBA                                     |        |        |
+| Day                                              | Part 1 | Part 2  |
+| :----------------------------------------------- | :----: | :-----: |
+| [Day 1: Report Repair](src/01/summary.md#readme) | :star: | :star2: |
+| Day 2 - TBA                                      |        |         |
+| Day 3 - TBA                                      |        |         |
+| Day 4 - TBA                                      |        |         |
+| Day 5 - TBA                                      |        |         |
+| Day 6 - TBA                                      |        |         |
+| Day 7 - TBA                                      |        |         |
+| Day 8 - TBA                                      |        |         |
+| Day 9 - TBA                                      |        |         |
+| Day 10 - TBA                                     |        |         |
+| Day 11 - TBA                                     |        |         |
+| Day 12 - TBA                                     |        |         |
+| Day 13 - TBA                                     |        |         |
+| Day 14 - TBA                                     |        |         |
+| Day 15 - TBA                                     |        |         |
+| Day 16 - TBA                                     |        |         |
+| Day 17 - TBA                                     |        |         |
+| Day 18 - TBA                                     |        |         |
+| Day 19 - TBA                                     |        |         |
+| Day 20 - TBA                                     |        |         |
+| Day 21 - TBA                                     |        |         |
+| Day 22 - TBA                                     |        |         |
+| Day 23 - TBA                                     |        |         |
+| Day 24 - TBA                                     |        |         |

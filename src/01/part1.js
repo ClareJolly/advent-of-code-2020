@@ -1,10 +1,5 @@
-import path from 'path';
-import fileToArray from '../helpers/fileToArray';
-
-const processExpenses = () => {
-  const expensesList = fileToArray(
-    path.join(__dirname, './data/expenseReport.txt')
-  ).map((x) => parseInt(x));
+const processExpenses = (expenseData) => {
+  const expensesList = expenseData.map((x) => parseInt(x));
 
   const numbers = expensesList.filter((item) =>
     expensesList.includes(2020 - item)
