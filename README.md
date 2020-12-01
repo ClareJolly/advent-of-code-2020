@@ -4,7 +4,7 @@ My solutions to Advent of Code 2020
 
 [Advent of Code](https://adventofcode.com/2020)
 
-:christmas_tree: :christmas_tree: :christmas_tree: :christmas_tree: :christmas_tree:
+<center>:christmas_tree: :christmas_tree: :christmas_tree: :christmas_tree: :christmas_tree: :christmas_tree: :christmas_tree: :christmas_tree: :christmas_tree: :christmas_tree: :christmas_tree: :christmas_tree: :christmas_tree: :christmas_tree: :christmas_tree: :christmas_tree: :christmas_tree: :christmas_tree: :christmas_tree: :christmas_tree:</center>
 
 ## The Story
 
@@ -16,7 +16,7 @@ To save your vacation, you need to get all fifty stars by December 25th.
 
 Collect stars by solving puzzles. Two puzzles will be made available on each day in the Advent calendar; the second puzzle is unlocked when you complete the first. Each puzzle grants one star. Good luck!
 
-:christmas_tree: :christmas_tree: :christmas_tree: :christmas_tree: :christmas_tree:
+<center>:christmas_tree: :christmas_tree: :christmas_tree: :christmas_tree: :christmas_tree: :christmas_tree: :christmas_tree: :christmas_tree: :christmas_tree: :christmas_tree: :christmas_tree: :christmas_tree: :christmas_tree: :christmas_tree: :christmas_tree: :christmas_tree: :christmas_tree: :christmas_tree: :christmas_tree: :christmas_tree:</center>
 
 ## Progress
 
@@ -46,5 +46,3 @@ Collect stars by solving puzzles. Two puzzles will be made available on each day
 | Day 22 - TBA                                     |        |         |
 | Day 23 - TBA                                     |        |         |
 | Day 24 - TBA                                     |        |         |
-
-:christmas_tree: :christmas_tree: :christmas_tree: :christmas_tree: :christmas_tree:
