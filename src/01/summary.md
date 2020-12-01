@@ -1,6 +1,6 @@
 # Day 1: Report Repair
 
-Before you leave, the Elves in accounting just need you to fix your expense report (your puzzle input); apparently, something isn't quite adding up.
+Before you leave, the Elves in accounting just need you to fix your expense report ([your puzzle input](data/expenseReport.txt)); apparently, something isn't quite adding up.
 
 :christmas_tree: :christmas_tree: :christmas_tree: :christmas_tree: :christmas_tree: :christmas_tree: :christmas_tree: :christmas_tree: :christmas_tree: :christmas_tree: :christmas_tree: :christmas_tree: :christmas_tree: :christmas_tree: :christmas_tree: :christmas_tree: :christmas_tree: :christmas_tree: :christmas_tree: :christmas_tree:
 

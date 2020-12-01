@@ -1,4 +1,4 @@
-# :christmas_tree: :christmas_tree: Advent of code 2020 :christmas_tree: :christmas_tree:
+# :christmas_tree: :santa: :christmas_tree: Advent of code 2020 :christmas_tree: :santa: :christmas_tree:
 
 My solutions to Advent of Code 2020
 
