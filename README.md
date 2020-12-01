@@ -4,6 +4,8 @@ My solutions to Advent of Code 2020
 
 [Advent of Code](https://adventofcode.com/2020)
 
+---
+
 ## The Story
 
 After saving Christmas five years in a row, you've decided to take a vacation at a nice resort on a tropical island. Surely, Christmas will go on without you.
