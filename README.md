@@ -1,4 +1,4 @@
-# 🎄 :santa: 🎄 Advent of code 2020 🎄 :santa: 🎄
+# 🎄 🎅 🎄 Advent of code 2020 🎄 🎅 🎄
 
 My solutions to Advent of Code 2020
 
@@ -46,3 +46,4 @@ Collect stars by solving puzzles. Two puzzles will be made available on each day
 | Day 22 - TBA                                     |        |         |
 | Day 23 - TBA                                     |        |         |
 | Day 24 - TBA                                     |        |         |
+| Day 25 - TBA                                     |        |         |
