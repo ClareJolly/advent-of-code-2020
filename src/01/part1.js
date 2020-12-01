@@ -1,18 +1,11 @@
+import { filteringList, multiplyArrayItems, constants } from './helpers';
+
 const processExpenses = (expenseData) => {
   const expensesList = expenseData.map((x) => parseInt(x));
 
-  const numbers = expensesList.filter((item) =>
-    expensesList.includes(2020 - item)
-  );
+  const numbers = filteringList(expensesList, constants.SUMTOTAL);
 
-  if (numbers.length === 2) {
-    const total = numbers.reduce((acc, item) => {
-      return acc * item;
-    }, 1);
-
-    console.log('part 1 ====>', total);
-    return total;
-  }
+  multiplyArrayItems({ part: 1, arr: numbers, expectedLength: 2 });
 };
 
 export default processExpenses;

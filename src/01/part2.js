@@ -1,25 +1,24 @@
+import {
+  multiplyArrayItems,
+  filteringList,
+  constants,
+  arrToNumbers,
+} from './helpers';
+
 const processExpensesBy3 = (expenseData) => {
-  const expensesList = expenseData.map((x) => parseInt(x));
+  const expensesList = arrToNumbers(expenseData);
 
   const numbers = expensesList.filter((item) => {
-    const lookup = 2020 - item;
-    const filtered = expensesList.filter((item2) => {
-      return expensesList.includes(lookup - item2);
-    });
+    const lookup = constants.SUMTOTAL - item;
+    const filtered = filteringList(expensesList, lookup);
 
     if (filtered.length) {
       filtered.push(item);
       return filtered;
     }
   });
-  if (numbers.length === 3) {
-    const total = numbers.reduce((acc, item) => {
-      return acc * item;
-    }, 1);
 
-    console.log('part 2 ====>', total);
-    return total;
-  }
+  multiplyArrayItems({ part: 2, arr: numbers, expectedLength: 3 });
 };
 
 export default processExpensesBy3;
