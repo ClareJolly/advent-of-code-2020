@@ -1,4 +1,4 @@
-# Day 1: Report Repair
+# :christmas_tree: :santa: :christmas_tree: Day 1: Report Repair :christmas_tree: :santa: :christmas_tree:
 
 Before you leave, the Elves in accounting just need you to fix your expense report ([your puzzle input](data/expenseReport.txt)); apparently, something isn't quite adding up.
 
