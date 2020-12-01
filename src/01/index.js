@@ -1,3 +1,5 @@
+/* istanbul ignore file */
+
 import fileToArray from '../helpers/fileToArray';
 import path from 'path';
 
