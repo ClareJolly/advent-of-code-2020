@@ -23,7 +23,7 @@ In this list, the two entries that sum to 2020 are 1721 and 299. Multiplying the
 
 Of course, your expense report is much larger. Find the two entries that sum to 2020; what do you get if you multiply them together?
 
-[Solution Part 1](part1.js)
+[Solution Part 1](./part1/index.js)
 
 🎄 🎄 🎄 🎄 🎄 🎄 🎄 🎄 🎄 🎄 🎄 🎄 🎄 🎄 🎄 🎄 🎄 🎄 🎄 🎄
 
@@ -35,6 +35,6 @@ Using the above example again, the three entries that sum to 2020 are 979, 366, 
 
 In your expense report, what is the product of the three entries that sum to 2020?
 
-[Solution Part 2](part2.js)
+[Solution Part 2](./part2/index.js)
 
 🎄 🎄 🎄 🎄 🎄 🎄 🎄 🎄 🎄 🎄 🎄 🎄 🎄 🎄 🎄 🎄 🎄 🎄 🎄 🎄

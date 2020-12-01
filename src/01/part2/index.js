@@ -3,7 +3,7 @@ import {
   filteringList,
   constants,
   arrToNumbers,
-} from './helpers';
+} from '../helpers';
 
 const processExpensesBy3 = (expenseData) => {
   const expensesList = arrToNumbers(expenseData);
@@ -18,7 +18,7 @@ const processExpensesBy3 = (expenseData) => {
     }
   });
 
-  multiplyArrayItems({ part: 2, arr: numbers, expectedLength: 3 });
+  return multiplyArrayItems({ part: 2, arr: numbers, expectedLength: 3 });
 };
 
 export default processExpensesBy3;
