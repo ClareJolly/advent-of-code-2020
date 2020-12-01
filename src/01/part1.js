@@ -3,7 +3,7 @@ import fileToArray from '../helpers/fileToArray';
 
 const processExpenses = () => {
   const expensesList = fileToArray(
-    path.join(__dirname, 'expenseReport.txt')
+    path.join(__dirname, './data/expenseReport.txt')
   ).map((x) => parseInt(x));
 
   const numbers = expensesList.filter((item) =>
