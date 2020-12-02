@@ -2,6 +2,8 @@
 
 My solutions to Advent of Code 2020
 
+I will be using JavaScript/NodeJS mostly
+
 [Advent of Code](https://adventofcode.com/2020)
 
 🎄 🎄 🎄 🎄 🎄 🎄 🎄 🎄 🎄 🎄 🎄 🎄 🎄 🎄 🎄 🎄 🎄 🎄 🎄 🎄
