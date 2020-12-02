@@ -1,9 +1,5 @@
-import {
-  multiplyArrayItems,
-  filteringList,
-  constants,
-  arrToNumbers,
-} from '../helpers'
+import { multiplyArrayItems, filteringList, constants } from '../helpers'
+import arrToNumbers from '../../helpers/arrToNumbers'
 
 const processExpensesBy3 = (expenseData) => {
   const expensesList = arrToNumbers(expenseData)

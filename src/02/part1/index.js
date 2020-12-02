@@ -1,4 +1,4 @@
-import { arrToNumbers } from '../helpers'
+import arrToNumbers from '../../helpers/arrToNumbers'
 
 const part1 = (inputData) => {
   const cleanInput = inputData.map((item) => {

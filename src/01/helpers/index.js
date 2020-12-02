@@ -14,12 +14,8 @@ const filteringList = (arr, lookup) => {
   })
 }
 
-const arrToNumbers = (arr) => {
-  return arr.map((x) => parseInt(x))
-}
-
 const constants = {
   SUMTOTAL: 2020,
 }
 
-export { multiplyArrayItems, filteringList, constants, arrToNumbers }
+export { multiplyArrayItems, filteringList, constants }
