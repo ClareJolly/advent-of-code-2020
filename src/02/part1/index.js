@@ -1,6 +1,6 @@
-import { arrToNumbers } from './helpers'
+import { arrToNumbers } from '../helpers'
 
-const part1 = (inputData, part) => {
+const part1 = (inputData) => {
   const cleanInput = inputData.map((item) => {
     const details = item.split(' ')
     return {
@@ -17,7 +17,7 @@ const part1 = (inputData, part) => {
 
     return occurances >= pw.numbers[0] && occurances <= pw.numbers[1]
   })
-  console.log(`part ${part} ====>`, filtered.length)
+  return filtered.length
 }
 
 export default part1

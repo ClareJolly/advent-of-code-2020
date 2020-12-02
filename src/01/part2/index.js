@@ -3,22 +3,22 @@ import {
   filteringList,
   constants,
   arrToNumbers,
-} from '../helpers';
+} from '../helpers'
 
 const processExpensesBy3 = (expenseData) => {
-  const expensesList = arrToNumbers(expenseData);
+  const expensesList = arrToNumbers(expenseData)
 
   const numbers = expensesList.filter((item) => {
-    const lookup = constants.SUMTOTAL - item;
-    const filtered = filteringList(expensesList, lookup);
+    const lookup = constants.SUMTOTAL - item
+    const filtered = filteringList(expensesList, lookup)
 
     if (filtered.length) {
-      filtered.push(item);
-      return filtered;
+      filtered.push(item)
+      return filtered
     }
-  });
+  })
 
-  return multiplyArrayItems({ part: 2, arr: numbers, expectedLength: 3 });
-};
+  return multiplyArrayItems({ arr: numbers, expectedLength: 3 })
+}
 
-export default processExpensesBy3;
+export default processExpensesBy3

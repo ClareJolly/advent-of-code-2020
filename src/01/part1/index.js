@@ -3,14 +3,14 @@ import {
   multiplyArrayItems,
   constants,
   arrToNumbers,
-} from '../helpers';
+} from '../helpers'
 
 const processExpenses = (expenseData) => {
-  const expensesList = arrToNumbers(expenseData);
+  const expensesList = arrToNumbers(expenseData)
 
-  const numbers = filteringList(expensesList, constants.SUMTOTAL);
+  const numbers = filteringList(expensesList, constants.SUMTOTAL)
 
-  return multiplyArrayItems({ part: 1, arr: numbers, expectedLength: 2 });
-};
+  return multiplyArrayItems({ arr: numbers, expectedLength: 2 })
+}
 
-export default processExpenses;
+export default processExpenses

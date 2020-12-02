@@ -23,7 +23,7 @@ Collect stars by solving puzzles. Two puzzles will be made available on each day
 | Day                                                     | Part 1 | Part 2 |
 | :------------------------------------------------------ | :----: | :----: |
 | [Day 1: Report Repair](src/01/summary.md#readme)        |   ⭐   |   🌟   |
-| [Day 2 - Password Philosophy](src/02/summary.md#readme) |   ⭐   |        |
+| [Day 2 - Password Philosophy](src/02/summary.md#readme) |   ⭐   |   🌟   |
 | Day 3 - TBA                                             |        |        |
 | Day 4 - TBA                                             |        |        |
 | Day 5 - TBA                                             |        |        |
