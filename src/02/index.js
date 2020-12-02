@@ -1,15 +1,12 @@
 /* istanbul ignore file */
 
-import fileToArray from '../helpers/fileToArray';
-import path from 'path';
+import fileToArray from '../helpers/fileToArray'
+import path from 'path'
 
-import part1 from './part1';
-import part2 from './part2';
+import part1 from './part1'
+import part2 from './part2'
 
-const expenseData = fileToArray(
-  path.join(__dirname, 'data/expenseReport.txt'),
-  'utf-8'
-);
+const inputData = fileToArray(path.join(__dirname, 'data/input.txt'), 'utf-8')
 
-part1(expenseData);
-part2(expenseData);
+part1(inputData, 1)
+part2(inputData, 2)
