@@ -8,7 +8,8 @@
   "scripts": {
     "test": "jest ",
     "01": "babel-node ./src/01",
-    "02": "babel-node ./src/02"
+    "02": "babel-node ./src/02",
+    "03": "babel-node ./src/03"
   },
   "jest": {
     "rootDir": "./src"
