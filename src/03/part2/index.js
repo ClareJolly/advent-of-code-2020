@@ -1,4 +1,5 @@
 import part1 from '../part1';
+
 const part2 = (inputData) => {
   const slopes = [
     { x: 1, y: 1 },
@@ -8,12 +9,9 @@ const part2 = (inputData) => {
     { x: 1, y: 2 },
   ];
 
-  let total = 1;
-
-  slopes.forEach((s) => {
-    total = total * part1(inputData, s);
-  });
-  return total;
+  return slopes.reduce((acc, item) => {
+    return acc * part1(inputData, item);
+  }, 1);
 };
 
 export default part2;
