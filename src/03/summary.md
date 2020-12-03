@@ -6,7 +6,7 @@ With the toboggan login problems resolved, you set off toward the airport. While
 
 ## Part 1
 
-Due to the local geology, trees in this area only grow on exact integer coordinates in a grid. You make a map (your puzzle input) of the open squares (.) and trees (#) you can see. For example:
+Due to the local geology, trees in this area only grow on exact integer coordinates in a grid. You make a map ([your puzzle input](data/input.txt)) of the open squares (.) and trees (#) you can see. For example:
 
 ```
 ..##.......
