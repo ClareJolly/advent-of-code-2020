@@ -1,21 +1,17 @@
-import part1 from '../part1'
+import fileToArray from '../../helpers/fileToArray'
+import path from 'path'
+
+import part1 from '.'
 
 describe('part1', () => {
-  it('returns valid for "1-3 a: abcde"', () => {
-    const result = part1(['1-3 a: abcde'], 2)
+  const inputData = fileToArray(
+    path.join(__dirname, '../data/test.txt'),
+    'utf-8'
+  )
 
-    expect(result).toEqual(1)
-  })
+  it('returns the correct number of valid passports"', () => {
+    const result = part1(inputData)
 
-  it('returns invalid for "1-3 b: cdefg"', () => {
-    const result = part1(['1-3 b: cdefg'], 2)
-
-    expect(result).toEqual(0)
-  })
-
-  it('returns valid for "2-9 c: ccccccccc"', () => {
-    const result = part1(['2-9 c: ccccccccc'], 2)
-
-    expect(result).toEqual(0)
+    expect(result).toEqual(2)
   })
 })
