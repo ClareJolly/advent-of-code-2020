@@ -51,7 +51,7 @@ const validate = (item) => {
 };
 
 const part2 = (inputData) => {
-  const batches = getBatches(inputData);
+  const batches = getBatches(inputData, 'cid');
   const excludeCid = batches.map((b) => {
     delete b['cid'];
     return b;
