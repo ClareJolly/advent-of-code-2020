@@ -27,7 +27,7 @@ Collect stars by solving puzzles. Two puzzles will be made available on each day
 | [Day 1: Report Repair](src/01/summary.md#readme)        |   ⭐   |   🌟   |
 | [Day 2 - Password Philosophy](src/02/summary.md#readme) |   ⭐   |   🌟   |
 | [Day 3 - Toboggan Trajectory](src/03/summary.md#readme) |   ⭐   |   🌟   |
-| Day 4 - TBA                                             |        |        |
+| [Day 4 - Passport Processing](src/04/summary.md)        |        |        |
 | Day 5 - TBA                                             |        |        |
 | Day 6 - TBA                                             |        |        |
 | Day 7 - TBA                                             |        |        |
