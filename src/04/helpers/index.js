@@ -6,13 +6,12 @@ const processItem = (item) => {
 const getBatches = (inputData) => {
   const batches = inputData.reduce(
     (acc, item) => {
-      const cleanItem = item.replace('\r', '');
-      if (cleanItem === '') {
+      if (item === '') {
         acc.push([]);
         return acc;
       }
 
-      const processedItem = processItem(cleanItem);
+      const processedItem = processItem(item);
       acc[acc.length - 1].push(...processedItem);
       return acc;
     },

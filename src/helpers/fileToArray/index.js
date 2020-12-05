@@ -1,7 +1,8 @@
 import fs from 'fs';
 
 const fileToArray = (filepath) => {
-  return fs.readFileSync(filepath, 'utf-8').split('\n');
+  const fileAsArray = fs.readFileSync(filepath, 'utf-8').split('\n');
+  return fileAsArray.map((item) => item.replace('\r', ''));
 };
 
 export default fileToArray;
