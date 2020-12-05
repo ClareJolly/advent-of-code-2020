@@ -1,5 +1,5 @@
 const part1 = (inputData, slope = { x: 3, y: 1 }) => {
-  const mountain = inputData.map((item) => item.replace('\r', '').split(''));
+  const mountain = inputData.map((item) => item.split(''));
   const width = mountain[0].length;
 
   let trees = 0;
