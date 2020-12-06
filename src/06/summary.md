@@ -50,7 +50,7 @@ In this example, the sum of these counts is 3 + 3 + 3 + 1 + 1 = 11.
 
 For each group, count the number of questions to which anyone answered "yes". What is the sum of those counts?
 
-[Solution Part 1](part1.js)
+[Solution Part 1](part1.js) // 6382
 
 🎄 🎄 🎄 🎄 🎄 🎄 🎄 🎄 🎄 🎄 🎄 🎄 🎄 🎄 🎄 🎄 🎄 🎄 🎄 🎄
 
@@ -92,6 +92,6 @@ In this example, the sum of these counts is 3 + 0 + 1 + 1 + 1 = 6.
 
 For each group, count the number of questions to which everyone answered "yes". What is the sum of those counts?
 
-[Solution Part 2](part2.js)
+[Solution Part 2](part2.js) // 3197
 
 🎄 🎄 🎄 🎄 🎄 🎄 🎄 🎄 🎄 🎄 🎄 🎄 🎄 🎄 🎄 🎄 🎄 🎄 🎄 🎄

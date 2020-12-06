@@ -26,7 +26,7 @@ In the above example, 2 passwords are valid. The middle password, cdefg, is not;
 
 How many passwords are valid according to their policies?
 
-[Solution Part 1](part1.js)
+[Solution Part 1](part1.js) // 517
 
 🎄 🎄 🎄 🎄 🎄 🎄 🎄 🎄 🎄 🎄 🎄 🎄 🎄 🎄 🎄 🎄 🎄 🎄 🎄 🎄
 
@@ -48,6 +48,6 @@ Given the same example list from above:
 
 How many passwords are valid according to the new interpretation of the policies?
 
-[Solution Part 2](part2.js)
+[Solution Part 2](part2.js) // 284
 
 🎄 🎄 🎄 🎄 🎄 🎄 🎄 🎄 🎄 🎄 🎄 🎄 🎄 🎄 🎄 🎄 🎄 🎄 🎄 🎄

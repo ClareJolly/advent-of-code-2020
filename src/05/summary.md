@@ -44,7 +44,7 @@ Here are some other boarding passes:
 
 As a sanity check, look through your list of boarding passes. What is the highest seat ID on a boarding pass?
 
-[Solution Part 1](part1.js)
+[Solution Part 1](part1.js) // 913
 
 🎄 🎄 🎄 🎄 🎄 🎄 🎄 🎄 🎄 🎄 🎄 🎄 🎄 🎄 🎄 🎄 🎄 🎄 🎄 🎄
 
@@ -58,6 +58,6 @@ Your seat wasn't at the very front or back, though; the seats with IDs +1 and -1
 
 What is the ID of your seat?
 
-[Solution Part 2](part2.js)
+[Solution Part 2](part2.js) // 717
 
 🎄 🎄 🎄 🎄 🎄 🎄 🎄 🎄 🎄 🎄 🎄 🎄 🎄 🎄 🎄 🎄 🎄 🎄 🎄 🎄

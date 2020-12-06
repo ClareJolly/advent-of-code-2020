@@ -3,7 +3,8 @@ const argv = yargs.argv;
 
 const run = async () => {
   const day = argv.day || argv.d;
-  await import(`./${day}`);
+  const { default: dayFunc } = await import(`./${day}`);
+  dayFunc();
 };
 
 run();
