@@ -56,14 +56,42 @@ For each group, count the number of questions to which anyone answered "yes". Wh
 
 ## Part 2
 
-<!-- Ding! The "fasten seat belt" signs have turned on. Time to find your seat.
+As you finish the last group's customs declaration, you notice that you misread one word in the instructions:
 
-It's a completely full flight, so your seat should be the only missing boarding pass in your list. However, there's a catch: some of the seats at the very front and back of the plane don't exist on this aircraft, so they'll be missing from your list as well.
+You don't need to identify the questions to which anyone answered "yes"; you need to identify the questions to which everyone answered "yes"!
 
-Your seat wasn't at the very front or back, though; the seats with IDs +1 and -1 from yours will be in your list.
+Using the same example as above:
 
-What is the ID of your seat?
+```
+abc
 
-[Solution Part 2](part2.js) -->
+a
+b
+c
+
+ab
+ac
+
+a
+a
+a
+a
+
+b
+```
+
+This list represents answers from five groups:
+
+- In the first group, everyone (all 1 person) answered "yes" to 3 questions: a, b, and c.
+- In the second group, there is no question to which everyone answered "yes".
+- In the third group, everyone answered yes to only 1 question, a. Since some people did not answer "yes" to b or c, they don't count.
+- In the fourth group, everyone answered yes to only 1 question, a.
+- In the fifth group, everyone (all 1 person) answered "yes" to 1 question, b.
+
+In this example, the sum of these counts is 3 + 0 + 1 + 1 + 1 = 6.
+
+For each group, count the number of questions to which everyone answered "yes". What is the sum of those counts?
+
+[Solution Part 2](part2.js)
 
 🎄 🎄 🎄 🎄 🎄 🎄 🎄 🎄 🎄 🎄 🎄 🎄 🎄 🎄 🎄 🎄 🎄 🎄 🎄 🎄
