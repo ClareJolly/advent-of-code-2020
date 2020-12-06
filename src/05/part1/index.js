@@ -1,6 +1,6 @@
 const getColumns = (seatCode, totalColumns = 8) => {
   const seatcodeRows = seatCode.split('').slice(7, 10);
-  let col = seatcodeRows.reduce(
+  let column = seatcodeRows.reduce(
     (acc, item) => {
       if (item === 'L') {
         return [acc[0], (acc[0] + acc[1]) >> 1];
@@ -12,7 +12,7 @@ const getColumns = (seatCode, totalColumns = 8) => {
     [0, 7]
   );
 
-  return col[0];
+  return column[0];
   let columnRange = [0, totalColumns - 1];
   seatcodeRows.forEach((code, i) => {
     if (i === 0) {
