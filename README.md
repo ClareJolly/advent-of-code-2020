@@ -29,7 +29,7 @@ Collect stars by solving puzzles. Two puzzles will be made available on each day
 | [Day 3 - Toboggan Trajectory](src/03/summary.md#readme) |   ⭐   |   🌟   |
 | [Day 4 - Passport Processing](src/04/summary.md)        |   ⭐   |   🌟   |
 | [Day 5 - Binary Boarding](src/05/summary.md)            |   ⭐   |   🌟   |
-| Day 6 - TBA                                             |        |        |
+| [Day 6 - Custom Customs](src/06/summary.md)             |        |        |
 | Day 7 - TBA                                             |        |        |
 | Day 8 - TBA                                             |        |        |
 | Day 9 - TBA                                             |        |        |
