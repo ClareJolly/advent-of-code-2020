@@ -1,5 +1,18 @@
 const getColumns = (seatCode, totalColumns = 8) => {
   const seatcodeRows = seatCode.split('').slice(7, 10);
+  let col = seatcodeRows.reduce(
+    (acc, item) => {
+      if (item === 'L') {
+        return [acc[0], (acc[0] + acc[1]) >> 1];
+      }
+      if (item === 'R') {
+        return [((acc[0] + acc[1]) >> 1) + 1, acc[1]];
+      }
+    },
+    [0, 7]
+  );
+
+  return col[0];
   let columnRange = [0, totalColumns - 1];
   seatcodeRows.forEach((code, i) => {
     if (i === 0) {
@@ -42,6 +55,19 @@ const getColumns = (seatCode, totalColumns = 8) => {
 
 const getRows = (seatCode, totalRows = 128) => {
   const seatcodeRows = seatCode.split('').slice(0, 7);
+  let row = seatcodeRows.reduce(
+    (acc, item) => {
+      if (item === 'F') {
+        return [acc[0], (acc[0] + acc[1]) >> 1];
+      }
+      if (item === 'B') {
+        return [((acc[0] + acc[1]) >> 1) + 1, acc[1]];
+      }
+    },
+    [0, 127]
+  );
+
+  return row[0];
 
   let rowRange = [0, totalRows - 1];
   seatcodeRows.forEach((code, i) => {
@@ -76,7 +102,7 @@ const getRows = (seatCode, totalRows = 128) => {
   return rowRange[0];
 };
 
-const part1 = (inputData) => {
+const getAllSeats = (inputData) => {
   const totalRows = 128;
   const totalColumns = 8;
 
@@ -87,10 +113,16 @@ const part1 = (inputData) => {
     return acc;
   }, []);
 
+  return rows;
+};
+
+const part1 = (inputData) => {
+  const rows = getAllSeats(inputData);
+
   return rows.sort(function (a, b) {
     return b - a;
   })[0];
 };
 
 export default part1;
-export { getRows, getColumns };
+export { getRows, getColumns, getAllSeats };
