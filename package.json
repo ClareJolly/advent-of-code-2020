@@ -12,7 +12,8 @@
     "02": "babel-node ./src/02",
     "03": "babel-node ./src/03",
     "04": "babel-node ./src/04",
-    "05": "babel-node ./src/05"
+    "05": "babel-node ./src/05",
+    "07": "babel-node ./src/07/part2/test"
   },
   "jest": {
     "rootDir": "./src"
