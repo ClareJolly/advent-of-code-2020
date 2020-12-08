@@ -14,6 +14,7 @@ const part1 = (inputData) => {
   const data = inputData
     .map((d) => d.split(' '))
     .map((dd) => [dd[0], parseInt(dd[1])])
+  console.log('  ~ file: index.js ~ line 15 ~ part1 ~ data', data)
 
   let accumulator = 0
   let runNext = 0
