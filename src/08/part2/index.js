@@ -1,73 +1,61 @@
 const swapJmpAndNop = (data) => {
-  let replaced = []
+  let replaced = [];
   for (let i = 0; i < data.length; i++) {
-    const dataCopy = JSON.parse(JSON.stringify(data))
+    const dataCopy = JSON.parse(JSON.stringify(data));
 
-    let code = dataCopy[i].code
+    let code = dataCopy[i].code;
 
     if (code === 'jmp') {
-      dataCopy[i].code = 'nop'
-      replaced.push(dataCopy)
+      dataCopy[i].code = 'nop';
+      replaced.push(dataCopy);
     } else if (code === 'nop') {
-      dataCopy[i].code = 'jmp'
-      replaced.push(dataCopy)
+      dataCopy[i].code = 'jmp';
+      replaced.push(dataCopy);
     }
   }
-  return replaced
-}
+  return replaced;
+};
 
 const validate = (check) => {
-  let accumulator = 0
-  let runList = []
+  let accumulator = 0;
+  let runList = [];
 
   for (let i = 0; i < check.length; ) {
     if (runList.includes(i)) {
-      return 0
+      return 0;
     }
 
-    let code = check[i].code
-    let number = check[i].number
-    runList.push(i)
+    let code = check[i].code;
+    let number = check[i].number;
+    runList.push(i);
 
     if (code === 'acc') {
-      accumulator += number
-      i++
+      accumulator += number;
+      i++;
     } else if (code === 'jmp') {
-      i += number
+      i += number;
     } else {
-      i++
+      i++;
     }
   }
 
-  return accumulator
-}
+  return accumulator;
+};
 
 const part2 = (inputData) => {
-  const testData = [
-    'nop +0',
-    'acc +1',
-    'jmp +4',
-    'acc +3',
-    'jmp -3',
-    'acc -99',
-    'acc +1',
-    'jmp -4',
-    'acc +6',
-  ]
-
   const data = inputData.map((val) => {
-    const splitData = val.split(' ')
-    return { code: splitData[0], number: Number(splitData[1]) }
-  })
+    const splitData = val.split(' ');
+    return { code: splitData[0], number: Number(splitData[1]) };
+  });
 
-  const replaced = swapJmpAndNop(data)
+  const replaced = swapJmpAndNop(data);
 
   for (let code of replaced) {
-    let value = validate(code)
+    let value = validate(code);
     if (value > 0) {
-      return value
+      return value;
     }
   }
-}
+};
 
-export default part2
+export default part2;
