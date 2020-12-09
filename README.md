@@ -32,7 +32,7 @@ Collect stars by solving puzzles. Two puzzles will be made available on each day
 | [Day 6: Custom Customs](src/06/summary.md)             |   ⭐   |   🌟   |
 | [Day 7: Handy Haversacks](src/07/summary.md)           |   ⭐   |   ☆    |
 | [Day 8: Handheld Halting](src/08/summary.md)           |   ⭐   |   🌟   |
-| Day 9: TBA                                             |        |        |
+| [Day 9: Encoding Error](src/09/summary.md)             |        |        |
 | Day 10: TBA                                            |        |        |
 | Day 11: TBA                                            |        |        |
 | Day 12: TBA                                            |        |        |
