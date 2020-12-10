@@ -6,8 +6,9 @@ import part2 from './part2'
 
 const run = () => {
   const inputData = fileToArray(
-    // path.join(__dirname, 'data/input.txt'),
-    path.join(__dirname, 'data/testData.txt'),
+    path.join(__dirname, 'data/input.txt'),
+    // path.join(__dirname, 'data/testData.txt'),
+    // path.join(__dirname, 'data/testData2.txt'),
     'utf-8'
   )
 
