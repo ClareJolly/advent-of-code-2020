@@ -6,7 +6,7 @@ Your plane lands with plenty of time to spare. The final leg of your journey is 
 
 ## Part 1
 
-By modeling the process people use to choose (or abandon) their seat in the waiting area, you're pretty sure you can predict the best place to sit. You make a quick map of the seat layout (your puzzle input).
+By modeling the process people use to choose (or abandon) their seat in the waiting area, you're pretty sure you can predict the best place to sit. You make a quick map of the seat layout ([your puzzle input](data/input.txt)).
 
 The seat layout fits neatly on a grid. Each position is either floor (.), an empty seat (L), or an occupied seat (#). For example, the initial seat layout might look like this:
 
