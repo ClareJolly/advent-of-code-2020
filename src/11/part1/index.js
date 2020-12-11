@@ -28,25 +28,21 @@ const checkAdjacent = (data, x, y) => {
   return count;
 };
 
-const rule1 = (data) => {
-  const prep = preCount(data);
-  return prep.map((row, i1) => {
-    return row.map((seat, i2) => {
-      return {
-        ...seat,
-        symbol: seat.adjacent === 0 && seat.symbol !== '.' ? '#' : seat.symbol,
-      };
-    });
-  });
+const ruleQuery = (seat, rule) => {
+  if (rule === 1) {
+    return seat.adjacent === 0 && seat.symbol !== '.' ? '#' : seat.symbol;
+  } else {
+    return seat.adjacent > 3 && seat.symbol !== '.' ? 'L' : seat.symbol;
+  }
 };
 
-const rule2 = (data) => {
+const ruleProcess = (data, rule) => {
   const prep = preCount(data);
   return prep.map((row, i1) => {
     return row.map((seat, i2) => {
       return {
         ...seat,
-        symbol: seat.adjacent > 3 && seat.symbol !== '.' ? 'L' : seat.symbol,
+        symbol: ruleQuery(seat, rule),
       };
     });
   });
@@ -66,15 +62,13 @@ const part1 = (inputData) => {
     row.split('').map((s) => ({ adjacent: s === 'L', symbol: s }))
   );
 
-  const prep = preCount(data);
-
   let i = 0;
   let a = data;
   let b = data;
   while (i === 0 || !(JSON.stringify(a) === JSON.stringify(b))) {
-    const r1 = rule1(a);
+    const r1 = ruleProcess(a, 1);
     b = r1;
-    const r2 = rule2(r1);
+    const r2 = ruleProcess(r1, 2);
     a = r2;
     i++;
   }
