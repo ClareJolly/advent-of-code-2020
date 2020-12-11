@@ -1,30 +1,20 @@
 const checkAdjacent = (data, x, y) => {
-  //   console.log('🚀 ~ file: index.js ~ line 2 ~ checkAdjacent ~ x, y', x, y);
-  let count = 0;
+  const adjacent = [];
+  const yAbove = data[y - 1];
+  const yBelow = data[y + 1];
   if (y > 0) {
-    if (['#'].includes(data[y - 1][x].symbol)) count += 1;
-    if (x > 0) {
-      if (['#'].includes(data[y - 1][x - 1].symbol)) count += 1;
-    }
-    if (x < data[y].length - 1) {
-      if (['#'].includes(data[y - 1][x + 1].symbol)) count += 1;
-    }
+    adjacent.push(yAbove[x]?.symbol);
+    adjacent.push(yAbove[x - 1]?.symbol);
+    adjacent.push(yAbove[x + 1]?.symbol);
   }
   if (y < data.length - 1) {
-    if (['#'].includes(data[y + 1][x].symbol)) count += 1;
-    if (x > 0) {
-      if (['#'].includes(data[y + 1][x - 1].symbol)) count += 1;
-    }
-    if (x < data[y].length - 1) {
-      if (['#'].includes(data[y + 1][x + 1].symbol)) count += 1;
-    }
+    adjacent.push(yBelow[x]?.symbol);
+    adjacent.push(yBelow[x - 1]?.symbol);
+    adjacent.push(yBelow[x + 1]?.symbol);
   }
-  if (x > 0) {
-    if (['#'].includes(data[y][x - 1].symbol)) count += 1;
-  }
-  if (x < data[y].length - 1) {
-    if (['#'].includes(data[y][x + 1].symbol)) count += 1;
-  }
+  adjacent.push(data[y][x - 1]?.symbol);
+  adjacent.push(data[y][x + 1]?.symbol);
+  const count = adjacent.filter((a) => a === '#').length;
   return count;
 };
 
