@@ -21,7 +21,6 @@ const part1 = (inputData) => {
     var match = initialRegex.exec(inp);
     return { direction: match[1], number: Number(match[2]) };
   });
-  //   console.log('🚀 ~ file: index.js ~ line 8 ~ data ~ data', data);
 
   const facingDirMap = {
     E: {
@@ -80,15 +79,8 @@ const part1 = (inputData) => {
         dir.number
       );
     }
-    // console.log(
-    //   '🚀 ~ file: index.js ~ line 58 ~ data.forEach ~ dirKey',
-    //   dirKey
-    // );
-    // console.log('🚀 ~ file: index.js ~ line 57 ~ data.forEach ~ move', move);
-    // if (['E', 'F'].includes(dir.direction)) {
     lastStop = lastStop[dirKey] += move[dirKey] * dir.number;
-    facing = move.newFacing || rotatedNewFacing;
-    // }
+    facing = facing || rotatedNewFacing;
   });
   const lastPosition = stops.slice(-1)[0];
   return Math.abs(lastPosition.E) + Math.abs(lastPosition.N);
