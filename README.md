@@ -35,7 +35,7 @@ Collect stars by solving puzzles. Two puzzles will be made available on each day
 | [Day 9: Encoding Error](src/09/summary.md)             |   ⭐   |   🌟   |
 | [Day 10: Adapter Array](src/10/summary.md)             |   ⭐   |   🌟   |
 | [Day 11: Seating System ](src/11/summary.md)           |   ⭐   |   🌟   |
-| [ Day 12: Rain Risk](src/12/summary.md)                |   ⭐   |        |
+| [ Day 12: Rain Risk](src/12/summary.md)                |   ⭐   |   🌟   |
 | Day 13: TBA                                            |        |        |
 | Day 14: TBA                                            |        |        |
 | Day 15: TBA                                            |        |        |

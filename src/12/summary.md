@@ -74,6 +74,6 @@ After these operations, the ship's Manhattan distance from its starting position
 
 Figure out where the navigation instructions actually lead. What is the Manhattan distance between that location and the ship's starting position?
 
-[Solution Part 2](part2.js)
+[Solution Part 2](part2.js) // 63843
 
 🎄 🎄 🎄 🎄 🎄 🎄 🎄 🎄 🎄 🎄 🎄 🎄 🎄 🎄 🎄 🎄 🎄 🎄 🎄 🎄
