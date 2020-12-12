@@ -42,7 +42,7 @@ At the end of these instructions, the ship's Manhattan distance (sum of the abso
 
 Figure out where the navigation instructions lead. What is the Manhattan distance between that location and the ship's starting position?
 
-[Solution Part 1](part1.js)
+[Solution Part 1](part1.js) // 1496
 
 🎄 🎄 🎄 🎄 🎄 🎄 🎄 🎄 🎄 🎄 🎄 🎄 🎄 🎄 🎄 🎄 🎄 🎄 🎄 🎄
 
