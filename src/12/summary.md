@@ -59,7 +59,8 @@ Almost all of the actions indicate how to move a waypoint which is relative to t
 - Action L means to rotate the waypoint around the ship left (counter-clockwise) the given number of degrees.
 - Action R means to rotate the waypoint around the ship right (clockwise) the given number of degrees.
 - Action F means to move forward to the waypoint a number of times equal to the given value.
-- The waypoint starts 10 units east and 1 unit north relative to the ship. The waypoint is relative to the ship; that is, if the ship moves, the waypoint moves with it.
+
+The waypoint starts 10 units east and 1 unit north relative to the ship. The waypoint is relative to the ship; that is, if the ship moves, the waypoint moves with it.
 
 For example, using the same instructions as above:
 
