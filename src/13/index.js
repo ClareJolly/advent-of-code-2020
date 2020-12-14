@@ -14,11 +14,11 @@ const run = () => {
 
   const solution1 = part1(inputData);
   const solution2 = part2(inputData);
-  // const solution3 = orig(inputData);
+  const solution3 = orig(inputData);
 
   console.log(`part 1 ====>`, solution1);
   console.log(`part 2 ====>`, solution2);
-  // console.log(`part 2 - orig ====>`, solution3);
+  console.log(`part 2 - orig ====>`, solution3);
 
   return { part1: solution1, part2: solution2 };
 };
