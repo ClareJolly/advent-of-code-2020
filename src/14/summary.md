@@ -53,7 +53,7 @@ To initialize your ferry's docking program, you need the sum of all values left 
 
 Execute the initialization program. What is the sum of all values left in memory after it completes?
 
-[Solution Part 1](part1.js)
+[Solution Part 1](part1.js) // 8570568288597
 
 🎄 🎄 🎄 🎄 🎄 🎄 🎄 🎄 🎄 🎄 🎄 🎄 🎄 🎄 🎄 🎄 🎄 🎄 🎄 🎄
 
