@@ -39,7 +39,7 @@ Collect stars by solving puzzles. Two puzzles will be made available on each day
 | [Day 13: Shuttle Search](src/13/summary.md)            |   ⭐   |   🌟   |
 | [Day 14: Docking Data](src/14/summary.md)              |   ⭐   |   🌟   |
 | [Day 15: Rambunctious Recitation](src/15/summary.md)   |   ⭐   |   🌟   |
-| Day 16: TBA                                            |        |        |
+| [Day 16: Ticket Translation](src/16/summary.md)        |        |        |
 | Day 17: TBA                                            |        |        |
 | Day 18: TBA                                            |        |        |
 | Day 19: TBA                                            |        |        |
