@@ -5,7 +5,6 @@ seat: 13-40 or 45-50
 your ticket:
 7,1,14
 
-
 nearby tickets:
 7,3,47
 40,4,50
