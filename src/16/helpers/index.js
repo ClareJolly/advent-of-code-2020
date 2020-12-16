@@ -1,55 +1,38 @@
 const processItem = (item) => {
-  const regex = RegExp('ticket')
-  const processedItem = regex.test(item) ? item : item.split(',')
+  const regex = RegExp('ticket');
+  const processedItem = regex.test(item) ? item : item.split(',');
 
-  return processedItem
-}
+  return processedItem;
+};
 
 const getBatches = (inputData) => {
   const batches = inputData.reduce(
     (acc, item) => {
-      console.log('  ~ file: index.js ~ line 11 ~ getBatches ~ acc', acc)
-      let sectionName = 'rules'
-      let newKey
+      let sectionName = 'rules';
+      let newKey;
       if (item === '') {
-        // acc.push({})
-        return acc
+        return acc;
       }
-      const regex = RegExp('ticket')
-      const ticketHeading = regex.test(item)
-      const processedItem = processItem(item)
-      console.log(
-        '  ~ file: index.js ~ line 21 ~ getBatches ~ ticketHeading',
-        ticketHeading
-      )
+      const regex = RegExp('ticket');
+      const ticketHeading = regex.test(item);
+      const processedItem = processItem(item);
       if (ticketHeading) {
-        console.log('===========')
-        newKey = item.replace(' ', '')
-        acc[newKey] = []
-        sectionName = newKey
+        newKey = item.replace(' ', '').replace(':', '');
+        acc[newKey] = [];
+        sectionName = newKey;
       }
-      console.log(
-        '  ~ file: index.js ~ line 30 ~ getBatches ~ acc[acc.length - 1][sectionName]',
-        acc[sectionName]
-      )
       if (!ticketHeading) {
-        const keys = Object.keys(acc)
-        const lastKey = keys.slice(-1)[0]
-        acc[lastKey].push(processedItem)
+        const keys = Object.keys(acc);
+        const lastKey = keys.slice(-1)[0];
+        const toBePushed =
+          lastKey === 'yourticket' ? processedItem : [processedItem];
+        acc[lastKey].push(...toBePushed);
       }
-      return acc
+      return acc;
     },
     { rules: [] }
-  )
-  // const batchObjects = batches.map((batch) => {
-  //   return batch.reduce((acc, item) => {
-  //     const itemArr = item.split(':')
-  //     acc[itemArr[0]] = itemArr[1]
-  //     return acc
-  //   }, {})
-  // })
-  // return batchObjects
-  return batches
-}
+  );
+  return batches;
+};
 
-export default getBatches
+export default getBatches;
