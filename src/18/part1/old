@@ -1,0 +1,180 @@
+const sortOutBrackets = (input) => {
+  //   Set a position counter pos so that is points to just before the opening bracket after your for or while.
+  // Set an open brackets counter openBr to 0.
+  // Now keep incrementing pos, reading the characters at the respective positions, and increment openBr when you see an opening bracket, and decrement it when you see a closing bracket. That will increment it once at the beginning, for the first opening bracket in "for (", increment and decrement some more for some brackets in between, and set it back to 0 when your for bracket closes.
+  // So, stop when openBr is 0 again.
+  // var a = [],
+  //   r = []
+  // var txt = '((2 + 4 * 9) * (6 + 9 * 8 + 6) + 6) + 2 + 4 * 2'
+  // for (var i = 0; i < txt.length; i++) {
+  //   if (txt.charAt(i) == '(') {
+  //     a.push(i)
+  //   }
+  //   if (txt.charAt(i) == ')') {
+  //     r.push(txt.substring(a.pop() + 1, i))
+  //   }
+  // }
+  // console.log(r)
+
+  var str = input
+  var i = 0
+  function main() {
+    var arr = []
+    var startIndex = i
+    function addWord() {
+      if (i - 1 > startIndex) {
+        arr.push(str.slice(startIndex, i - 1))
+      }
+    }
+    while (i <= str.length) {
+      switch (str[i++]) {
+        case ' ':
+          addWord()
+          startIndex = i
+          continue
+        case '(':
+          arr.push(main())
+          startIndex = i
+          continue
+        case ')':
+          addWord()
+          return arr
+      }
+    }
+    addWord()
+    return arr
+  }
+  return main()
+}
+
+const reducingSum = (input, accum = 0, localAcc) => {
+  let lastOp = ''
+  let sum
+  let newSum
+  return input.reduce((acc, item, ind) => {
+    if (typeof item === 'object') {
+      // const json = JSON.parse(item.replace(/(?<!\\)'/g, '"'))
+      console.log('eek, some brackets', item)
+      sum = reducingSum(item, 0)
+      console.log(
+        '  ~ file: index.js ~ line 58 ~ returninput.reduce ~ sum',
+        sum
+      )
+      console.log(
+        '  ~ file: index.js ~ line 62 ~ returninput.reduce ~ acc',
+        acc
+      )
+      console.log(
+        '  ~ file: index.js ~ line 63 ~ returninput.reduce ~ lastOp',
+        lastOp
+      )
+      console.log(` BRACKET summing ${acc} ${lastOp} ${sum}`)
+      const useThisOp = lastOp ? lastOp : '+'
+      acc = operators[useThisOp](acc, sum)
+    }
+
+    // console.log('  ~ file: index.js ~ line 67 ~ part1 ~ lastOp', lastOp)
+    const num = parseInt(item)
+    // console.log('  ~ file: index.js ~ line 59 ~ total ~ num', num)
+    console.log('  ~ file: index.js ~ line 79 ~ returninput.reduce ~ sum', sum)
+    if (typeof num === 'number' && !isNaN(num)) {
+      console.log(
+        '  ~ file: index.js ~ line 70 ~ returninput.reduce ~ num',
+        num
+      )
+      if (!sum) {
+        if (ind === 0) acc = num
+        if (ind > 0) {
+          console.log(` GENERAL summing ${acc} ${lastOp} ${num}`)
+          acc = operators[lastOp](acc, num)
+        }
+      }
+    }
+    if (isNaN(num)) {
+      console.log(
+        '  ~ file: index.js ~ line 81 ~ total ~ typeof item',
+        typeof item
+      )
+      if (typeof item === 'object') {
+        // const json = JSON.parse(item.replace(/(?<!\\)'/g, '"'))
+        console.log('eek, some brackets', item)
+      } else {
+        console.log(
+          '  ~ file: index.js ~ line 99 ~ returninput.reduce ~ item',
+          item
+        )
+        lastOp = item
+      }
+      // if (index === 0) acc = num
+      // if (typeof num === 'object') {
+      // }
+    }
+    console.log('  ~ file: index.js ~ line 66 ~ total ~ acc', acc)
+    return acc
+  }, accum)
+}
+const operators = {
+  '+': function (a, b) {
+    return a + b
+  },
+  '*': function (a, b) {
+    return a * b
+  },
+}
+const part1 = (inputData) => {
+  // const bracketsFormatted = sortOutBrackets('1 + 2 * 3 + 4 * 5 + 6')
+  // const bracketsFormatted = sortOutBrackets('1 + (2 * 3) + (4 * (5 + 6))')
+  const bracketsFormatted = sortOutBrackets(
+    '((2 + 4 * 9) * (6 + 9 * 8 + 6) + 6) + 2 + 4 * 2'
+  )
+  // const bracketsFormatted = sortOutBrackets(
+  //   '5 * 9 * (7 * 3 * 3 + 9 * 3 + (8 + 6 * 4))'
+  // )
+  // const bracketsFormatted = sortOutBrackets('2 * 3 + (4 * 5)')
+  // const bracketsFormatted = sortOutBrackets(
+  //   '((2 + 4 * 9) * (6 + 9 * 8 + 6) + 6) + 2 + 4 * 2'
+  // )
+  console.log(
+    '  ~ file: index.js ~ line 52 ~ part1 ~ bracketsFormatted',
+    bracketsFormatted
+  )
+
+  const total = reducingSum(bracketsFormatted)
+  // const total = bracketsFormatted.reduce((acc, item, ind) => {
+  //   console.log('  ~ file: index.js ~ line 70 ~ total ~ item', item)
+  //   if (typeof item === 'object') {
+  //     // const json = JSON.parse(item.replace(/(?<!\\)'/g, '"'))
+  //     console.log('eek, some brackets', item)
+  //   }
+
+  //   // console.log('  ~ file: index.js ~ line 67 ~ part1 ~ lastOp', lastOp)
+  //   const num = parseInt(item)
+  //   // console.log('  ~ file: index.js ~ line 59 ~ total ~ num', num)
+  //   if (typeof num === 'number' && !isNaN(num)) {
+  //     if (ind === 0) acc = num
+  //     if (ind > 0) {
+  //       acc = operators[lastOp](acc, num)
+  //     }
+  //   }
+  //   if (isNaN(num)) {
+  //     console.log(
+  //       '  ~ file: index.js ~ line 81 ~ total ~ typeof item',
+  //       typeof item
+  //     )
+  //     if (typeof item === 'object') {
+  //       // const json = JSON.parse(item.replace(/(?<!\\)'/g, '"'))
+  //       console.log('eek, some brackets', item)
+  //     } else {
+  //       lastOp = item
+  //     }
+  //     // if (index === 0) acc = num
+  //     // if (typeof num === 'object') {
+  //     // }
+  //   }
+  //   console.log('  ~ file: index.js ~ line 66 ~ total ~ acc', acc)
+  //   return acc
+  // }, 0)
+  console.log('  ~ file: index.js ~ line 92 ~ total ~ total', total)
+}
+
+export default part1
