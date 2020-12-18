@@ -10,7 +10,7 @@ The experimental energy source is based on cutting-edge technology: a set of Con
 
 The pocket dimension contains an infinite 3-dimensional grid. At every integer 3-dimensional coordinate (x,y,z), there exists a single cube which is either active or inactive.
 
-In the initial state of the pocket dimension, almost all cubes start inactive. The only exception to this is a small flat region of cubes (your puzzle input); the cubes in this region start in the specified active (#) or inactive (.) state.
+In the initial state of the pocket dimension, almost all cubes start inactive. The only exception to this is a small flat region of cubes ([your puzzle input](data/input.txt)); the cubes in this region start in the specified active (#) or inactive (.) state.
 
 The energy source then proceeds to boot up by executing six cycles.
 
