@@ -42,7 +42,7 @@ Collect stars by solving puzzles. Two puzzles will be made available on each day
 | [Day 16: Ticket Translation](src/16/summary.md)        |   ⭐   |        |
 | [Day 17: Conway Cubes](src/17/summary.md)              |        |        |
 | [Day 18: Operation Order](src/18/summary.md)           |   ⭐   |   🌟   |
-| Day 19: TBA                                            |        |        |
+| [Day 19: Monster Messages](src/19/summary.md)          |        |        |
 | Day 20: TBA                                            |        |        |
 | Day 21: TBA                                            |        |        |
 | Day 22: TBA                                            |        |        |
