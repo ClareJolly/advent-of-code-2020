@@ -159,6 +159,6 @@ aabbbbbaabbbaaaaaabbbbbababaaaaabbaaabba
 
 After updating rules 8 and 11, how many messages completely match rule 0?
 
-[Solution Part 2](part2.js)
+[Solution Part 2](part2.js) // 424
 
 🎄 🎄 🎄 🎄 🎄 🎄 🎄 🎄 🎄 🎄 🎄 🎄 🎄 🎄 🎄 🎄 🎄 🎄 🎄 🎄
