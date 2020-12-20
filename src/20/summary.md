@@ -175,7 +175,7 @@ To check that you've assembled the image correctly, multiply the IDs of the four
 
 Assemble the tiles into an image. What do you get if you multiply together the IDs of the four corner tiles?
 
-[Solution Part 1](part1.js)
+[Solution Part 1](part1.js) // 60145080587029
 
 🎄 🎄 🎄 🎄 🎄 🎄 🎄 🎄 🎄 🎄 🎄 🎄 🎄 🎄 🎄 🎄 🎄 🎄 🎄 🎄
 
