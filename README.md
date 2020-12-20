@@ -43,7 +43,7 @@ Collect stars by solving puzzles. Two puzzles will be made available on each day
 | [Day 17: Conway Cubes](src/17/summary.md)              |        |        |
 | [Day 18: Operation Order](src/18/summary.md)           |   ⭐   |   🌟   |
 | [Day 19: Monster Messages](src/19/summary.md)          |   ⭐   |   🌟   |
-| Day 20: TBA                                            |        |        |
+| [Day 20: Jurassic Jigsaw](src/20/summary.md)           |        |        |
 | Day 21: TBA                                            |        |        |
 | Day 22: TBA                                            |        |        |
 | Day 23: TBA                                            |        |        |
