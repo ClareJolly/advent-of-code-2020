@@ -1,8 +1,8 @@
 const getHorizontal = (full, index) => full[index].join('');
-const getColumn = (full, index) =>
+const getColumn = (full, itemCalc) =>
   full
     .reduce((acc, item) => {
-      acc.push(item[index]);
+      acc.push(itemCalc(item));
       return acc;
     }, [])
     .join('');
@@ -12,21 +12,17 @@ const getEdges = (full) => {
   edges.push(getHorizontal(full, 0));
   edges.push(getHorizontal(full, full.length - 1));
 
-  const column1 = full
-    .reduce((acc, item) => {
-      acc.push(item[0]);
-      return acc;
-    }, [])
-    .join('');
-  edges.push(column1);
+  edges.push(
+    getColumn(full, (item) => {
+      return item[0];
+    })
+  );
 
-  const column2 = full
-    .reduce((acc, item) => {
-      acc.push(item.slice(-1)[0]);
-      return acc;
-    }, [])
-    .join('');
-  edges.push(column2);
+  edges.push(
+    getColumn(full, (item) => {
+      return item.slice(-1)[0];
+    })
+  );
 
   return edges;
 };
@@ -44,12 +40,11 @@ const getBatches = (inputData) => {
         return acc;
       }
 
-      const processedItem = processItem(item);
       if (!acc[acc.length - 1].tile) {
         acc[acc.length - 1].tile = item.replace('Tile ', '').replace(':', '');
         acc[acc.length - 1].tileDetails = [];
       } else {
-        acc[acc.length - 1].tileDetails.push(processedItem);
+        acc[acc.length - 1].tileDetails.push(processItem(item));
       }
       return acc;
     },
