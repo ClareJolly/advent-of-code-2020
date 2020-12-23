@@ -46,6 +46,6 @@ Collect stars by solving puzzles. Two puzzles will be made available on each day
 | [Day 20: Jurassic Jigsaw](src/20/summary.md)           |   ⭐   |        |
 | [Day 21: Allergen Assessment](src/21/summary.md)       |   ⭐   |   🌟   |
 | [Day 22: Crab Combat](/src/22/summary.md)              |   ⭐   |        |
-| Day 23: TBA                                            |        |        |
+| [Day 23: Crab Cups](/src/23/summary.md)                |        |        |
 | Day 24: TBA                                            |        |        |
 | Day 25: TBA                                            |        |        |
